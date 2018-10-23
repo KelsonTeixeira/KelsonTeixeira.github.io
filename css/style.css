@@ -128,7 +128,8 @@ h2:after {
     border-bottom: 2px solid #fff;    
 }
 .final h3{
-    text-align: center;    
+    text-align: center;
+    font-size: 250%;
 }
 .final p{
     text-align: center;
@@ -139,4 +140,12 @@ h2:after {
     word-spacing: 3px;
     color: #fff;
     font-size: 90%;
+}
+.social{
+    width: 70%;
+    margin-left: 15%;
+}
+.social img{
+    height: 60px;
+    width: auto;
 }
