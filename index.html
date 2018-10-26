@@ -5,6 +5,7 @@
         <link href="./vendors/css/Grid.css" type:="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         <link rel="icon" href="./imagens/icon2.png">
         <title>Kelson Teixeira</title>
     </head>
@@ -18,59 +19,106 @@
                 <a href = "#interesses">INTERESSES</a>
                 <a href = "#contato">CONTATO</a>
             </div>
+            <div class = "photo">
+                <!-- img src = "./imagens/eu.png" -->
+            </div>
             <div class = "eu">
-                <!-- img src = "./imagens/eu1.png" -->
-                <h1>Kelson Teixeira<br> Programador e Web Developer</h1>
+                <h1 class = "name">Kelson Teixeira</h1>
+                <h1 class = "job">Programador e Web Developer</h1>
             </div>
         </nav>
     </header>
     <body>
         <section id = "sobre">
-            <div class="sessao">
-                <h2>SOBRE</h2>
-                <p>
-                    Sou estudante de Engenharia de Controle e Autamação (Macatrônica) na Universidade de Brasília.<br />
-                    Sou Cristão, Músico, skatista e acredito que criatividade é essencial para existência humana.
-                </p>
+            <div class="sessao row">
+                <div class = "line">
+                    <h2>SOBRE</h2>
+                    <!-- <div class = "personal">
+                        <img src = "./imagens/eu.png">
+                    </div> -->
+                    <li>
+                        Sou estudante de Engenharia de Controle e Autamação (Mecatrônica) na Universidade de Brasília.
+                    </li>
+                    <li>
+                        Sou Cristão, Músico, skatista e acredito que criatividade é essencial para existência humana.
+                    </li>
+                </div>
             </div>
         </section>
         <section id = "experiencia">
             <div class="sessao">
-                <h2>experiência</h2>
-                <p>
-                    Comecei a trabalhar com apenas 15 anos e desde então não quis parar, nessa jornada eu já trabalhei em 
-                    uma copiadora, estagiei no Ministério Público, fui monitor de informática do ensino público e atualmente
-                    sou técnico de laboratória de Universidade Paulista, Unip - Brasília.
-                    Na igreja adquiri experiência em organização de eventos, liderança e música.
-
-                </p>
+                <div>
+                    <h2>experiência</h2>
+                    <li>
+                        Comecei a trabalhar com apenas 15 anos e desde então não quis parar, nessa jornada eu já trabalhei em 
+                        uma copiadora, estagiei no Ministério Público, fui monitor de informática do ensino público e atualmente
+                        sou técnico de laboratória de Universidade Paulista, Unip - Brasília.
+                    </li>
+                    <li>
+                        Academicamente eu já jui monitor de programação e também fui participante ativo da UnBall, Equipe de futebol de     robôs, porém hoje cuido apenas do financeiro.
+                    </li>
+                    <li>
+                        Na igreja adquiri experiência em organização de eventos, liderança e musicalidade.
+                    </li>
+                </div>
             </div>
         </section>
         <section id= "formacao">
-                <div class="sessao">
-                    <h2>Formação</h2>
-                    <p>
-                        Fiz meu Ensino Médio na Rede Pública de Ensino e atualmente  sou graduando em Engenharia Mecatrônica pela Universidade de Brasília, UnB.<br>
-                        Sou formado em inglês avançado pelo Centro Interescolar de Línguas, CIL.
-                    </p>
+                <div class="sessao row">
+                    <div>
+                        <h2>Formação</h2>
+                        <li>
+                            Fiz meu Ensino Médio na Rede Pública de Ensino.
+                        </li>
+                        <li>
+                            Atualmente  sou graduando em Engenharia Mecatrônica pela Universidade de Brasília, UnB.
+                        </li>
+                        <li>
+                            Sou formado em inglês avançado pelo Centro Interescolar de Línguas, CIL.
+                        </li>
+                    </div>
                 </div>
         </section>
         <section id= "habilidades">
-                <div class="sessao">
-                    <h2>Habilidades</h2>
-                    <p>
-                        Eu sou músico, toco bateria, violão, baixo e um pouco de teclado. Sei programar em C e em Python, tenho
-                        conhecimento sobre a ferramenta de interface gráfica Tkinter do Python, sei HTML5 e CSS3. Tenho conhecimento em Arduino.
-                        Tenho experiência como intérprete.
-                    </p>
+                <div class="sessao row">
+                    <div class = "lista">
+                        <h2>Habilidades</h2>
+                        <li>
+                            Eu sou músico, toco bateria, violão, baixo e um pouco de teclado. 
+                        </li>
+                        <li>
+                            Sei programar em C e em Python, tendo conhecimento sobre a ferramenta de interface gráfica Tkinter do Python.
+                        </li>
+                        <li>
+                            Sei HTML5 e CSS3. 
+                        </li>
+                        <li>
+                            Tenho conhecimento em Arduino.
+                        </li>
+                        <li>
+                            Tenho experiência como intérprete.
+                        </li>
+                        <div class = "icones">
+                            <i class="fas fa-music icon" style = "font-size: 40px; margin-right: 40px;"></i>
+                            <i class="fab fa-python icon" style = "font-size: 40px; margin-right: 40px;"></i>
+                            <i class="fab fa-html5 icon" style = "font-size: 40px; margin-right: 40px;"></i>
+                            <i class="fab fa-css3-alt icon" style = "font-size: 40px; margin-right: 40px;"></i>
+                        </div>
+                    </div>
                 </div>
         </section>
         <section id = "interesses">
-                <div class="sessao">
+                <div class="sessao row">
                     <h2>Interesses</h2>
-                    <p>
-                       Tenho muito interesse na área de desenvolvimento de softwares, sites e novas tecnologias.
-                    </p>
+                    <li>
+                       Tenho muito interesse na área de desenvolvimento de softwares
+                    </li>
+                    <li>
+                        Desenvolvemento sites a nível front-end e back-end.
+                    </li>
+                    <li>
+                        E almejo a possibilidade de criar novas tecnologias.
+                    </li>
                 </div>
         </section>
         <section id = "contato">
@@ -81,22 +129,22 @@
                 
                 <div class = "social">
                     <div class="col span-1-of-5">
-                        <h3><a href="https://github.com/KelsonTeixeira" target = "_blank"><i class="fa fa-github icone"></i></a></h3>
+                        <h3><a href="https://github.com/KelsonTeixeira" target = "_blank"><i class="fab fa-github"></i></a></h3>
                     </div>
 
                     <div class="col span-1-of-5">
-                       <h3><a href="https://www.youtube.com/channel/UCx7nYX19bVkfGaPh9RcdPYA" target = "_blank"><i class="fa fa-youtube"></i></a></h3>
+                       <h3><a href="https://www.youtube.com/channel/UCx7nYX19bVkfGaPh9RcdPYA" target = "_blank"><i class="fab fa-youtube"></i></a></h3>
                     </div>
 
                     <div class="col span-1-of-5">
-                        <h3><a href="mailto:kelsonandre97@gmail.com"><i class="fa fa-envelope"></i></a></h3>
+                        <h3><a href="mailto:kelsonandre97@gmail.com"><i class="far fa-envelope"></i></a></h3>
                     </div>
 
                     <div class="col span-1-of-5">
-                        <h3><a href="https://www.instagram.com/kelson_tx/" target = "_blank"><i class="fa fa-instagram"></i></a></h3>
+                        <h3><a href="https://www.instagram.com/kelson_tx/" target = "_blank"><i class="fab fa-instagram"></i></a></h3>
                     </div>
                     <div class="col span-1-of-5">
-                        <h3><a href="https://equipeunball.com.br" target = "_blank"><img src = "./fonts/2.png"></a></h3>
+                        <h3><a href="https://equipeunball.com.br" target = "_blank" class = "unball"><img src = "./fonts/2.png"></a></h3>
                     </div>
                 </div>
             </div>
