@@ -18,7 +18,8 @@ header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./imagens/comp.jpeg");
     background-size: cover;
     background-position: center;    
-    height: 100vh; 
+    height: 100vh;
+    background-attachment: fixed; 
 }
 h1{
     color: #fff;
@@ -161,8 +162,12 @@ h2:after {
 /*                  final section           */
 /*------------------------------------------*/
 .final {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./imagens/comp.jpeg");
     background-color: rgb(31, 30, 30);
     height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 .final h2 {
     margin: 0;

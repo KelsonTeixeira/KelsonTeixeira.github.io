@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(228, 224, 224);
+    border: 1px solid #000;
+    margin: 20px 20px;
+}
+h1{
+    color: #fff;
+    background-color: rgba(37, 37, 223, 0.767);
+    text-align: center;
+    padding 20px 40px;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 50px;
+
+}
+h2 {
+    text-align: center;
+    width: 100px;
+    background-color: rgba(177, 177, 223, 0.6);
+    margin: 0 auto 20px auto;
+    border-radius: 10%;
+}
+h2:hover,
+h2:active {
+    background-color: rgba(177, 177, 223, 0.8);
+}
+table{
+    margin: 60px auto;
+}
+table, tr, td {
+    border: 1px solid #000;
+
+}
+td{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 70px;
+}
