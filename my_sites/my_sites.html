@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang = "pt">
     <head>
         <title>My Sites</title>
+        <link href    = "css/mysite.css"       rel = "stylesheet" type = "text/css">
+        <link href    = "vendors/css/Grid.css" rel = "stylesheet" type = "text/css">
+        <meta charset = "utf-8">
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
     </head>
     <body>
-        <h1>My Sites</h1>
-        <ul>
-            <li><a href = "./game/tic.html">Game</a></li>
-            <li><a href = "./form/index.html">Forms</a></li>
-        </ul>
+        <h1>Meus<br />projetos</h1>
+        
+        <div class = "padrao">
+            
+            <div class = "col span-1-of-5">
+                <ul>
+                    <li><a href = "./game/tic.html" target = "_blank" id = "game_li">Game</a></li>
+                    <li><a href = "./form/index.html" target = "_blank" id = "form_li">Forms</a></li>
+                    <li><a href = "./form/index.html" target = "_blank" id = "embaixadores_li">Embaixadores</a></li>
+                </ul>
+            </div>
+
+
+            <div class = "col span-4-of-5 distance">
+            
+                <table>
+                    <tr>
+                        <td>
+                            
+                            <h2>Preview</h2>
+                            
+                            <img src = "image/game.png" id = "game">
+                            
+                            <img src = "image/form.png" id = "form">
+                            
+                            <img src = "image/embaixadores.png" id = "embaixadores">
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        
     </body>
+    <script src = "js/script.js"></script>
 </html>
