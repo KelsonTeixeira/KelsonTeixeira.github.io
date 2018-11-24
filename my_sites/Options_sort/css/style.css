@@ -1,0 +1,221 @@
+/*-------------Geral-------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*------------------principais------------*/
+html {
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: #2c3e50;
+}
+header {
+    background-color: #ecf0f1;
+    height: 100vh;
+    width: 60%;
+    margin-left: 20%;
+}
+
+footer {
+    height: 100px;
+    background-color: #34495e;
+    width: 100%;
+}
+
+/*----------------- H   ---------------*/
+h1 {
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 250%;
+    padding-top: 30px;
+}
+h2 {
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 80%;
+    margin-bottom: 50px;
+}
+
+
+h3 {
+    margin-top: 20px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 80%;
+    display: block;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 150%;
+    display: none;
+}
+h5 {
+    margin-top: 50px;
+    color: #d35400;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 400%;
+    display: none;
+    margin-bottom: 50px;
+}
+
+
+/*--------------TAGS------------------*/
+
+input {
+    width: 300px;
+    height: 25px;
+    margin-bottom: 25px;
+}
+
+
+form p {
+    text-align: center;
+    font-size: 70%;
+    margin-top: 15px;
+    color: #2c3e50;
+}
+
+/*----------------Classes--------------*/
+.icon{
+    text-align: center;
+    font-size: 700%;
+    padding: 20px 0 20px 0;
+    color: #d35400;
+}
+
+.input_place {
+    text-align: center;
+}
+
+.the_list {
+    margin-top: 10px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60%;
+    margin-bottom: 100px;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.doubt i {
+    position: absolute;
+    top: 20px;
+    right: 25%;
+    color: #d35400;
+    font-size: 120%;
+    z-index: 999;
+}
+
+.doubt i:hover {
+    position: absolute;
+    top: 20px;
+    right: 25%;
+    color: rgba(211, 84, 0, 0.8);
+    font-size: 120%;
+    z-index: 999;   
+}
+
+.doubt p {
+    width: 500px;
+    text-align: justify;
+    padding: 25px;
+    position: absolute;
+    top: 15px;
+    right: 24.5%;
+    background-color: rgba(44, 62, 80, 0.97);
+    color: #ecf0f1;
+    display: none;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 10px;
+    font-size: 80%;
+    word-spacing: 3px;
+}
+
+/*Botoes*/
+
+.button a{
+    border: 2px solid #d35400;
+    padding: 5px 8px;
+    border-radius: 25px;
+    color: #d35400;
+    background-color: transparent;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+    text-transform: uppercase;
+    
+}
+
+.button a:hover,
+.button a:active {
+    border: 2px solid #d35400;
+    padding: 5px 8px;
+    border-radius: 25px;
+    color: #ecf0f1;
+    transition: border 0.5s;
+    background-color: #d35400;
+    text-transform: uppercase;
+}
+
+.button2 a,
+.button3 a{
+    border: 2px solid #2c3e50;
+    padding: 5px 8px;
+    border-radius: 25px;
+    color: #2c3e50;
+    background-color: transparent;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+.button2,
+.button3 {
+    text-align: center;
+}
+.button2 a:hover,
+.button2 a:active,
+.button3 a:hover,
+.button3 a:active {
+    border: 2px solid #2c3e50;
+    padding: 5px 8px;
+    border-radius: 25px;
+    color: #ecf0f1;
+    transition: border 0.5s;
+    background-color: #2c3e50;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+.button2 {
+    display: block;
+}
+
+.button3 {
+    display: none;
+}
+
+
+
+
+
