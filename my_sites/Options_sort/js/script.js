@@ -5,6 +5,8 @@ var options = [];
 
 var verify = 0;
 
+var verify_2 = false;
+
 
 
 //------------------functions----------------
