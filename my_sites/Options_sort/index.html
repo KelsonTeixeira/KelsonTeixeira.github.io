@@ -23,7 +23,7 @@
         <header>
             
             <div class = "doubt">
-                <i class="fas fa-question-circle"></i>
+                <i class="fas fa-question-circle" onclick = "display_text()"></i>
                 <p id = "doubt">Para usar nosso sorteador é muito simples, dentro da caixa de texto você escreve
                 o uma das opções que deseja sortear e aperta adicionar ou aperte ENTER, pronto, esta está salva
                 repita o processo até adicionar todas as opções, quando terminar, aperte SORTEAR e veja o que
@@ -37,28 +37,28 @@
             
             <form name = "get_option">
                 <div class = "input_place">
-                    <input type= "text" name = "new_option">
-                    <div class = "button">
+                    <input type= "text" name = "new_option" class = "vanish">
+                    <div onclick = "add()" class = "button vanish">
                         <!-- input type="submit" placeholder="Adicionar" -->
                         <a>Adicionar</a>
                     </div>
                 </div>
-                <p class = "explain">*A cada opção, click adicionar.</p>
+                <p class = "explain vanish">*A cada opção, click adicionar.</p>
             </form>
             
             <div>
                 <h3>Adicionados:</h3>
                 <p class = "the_list"></p>
-                <div class = "button2">
+                <div onclick="luck()" class = "button2 vanish">
                     <a>Sortear</a>
                 </div>
             </div>
-            <h4>Sorteado:</h4>
-            <h5 class = "sorted"></h5>
-             <div class = "button3">
+            <h4 class = "show">Sorteado:</h4>
+            <h5 class = "sorted show"></h5>
+             <div onclick = "luck()" class = "button3 show">
                  <a>Sortear mais um</a>                
             </div>
-            <div class = "button4">
+            <div onclick = "reload_sort()" class = "button4 show">
                 <a>novo sorteio</a>
             </div>
         </header>

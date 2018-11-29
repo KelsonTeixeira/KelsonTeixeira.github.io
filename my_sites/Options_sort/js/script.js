@@ -3,8 +3,6 @@
 //------------------variables-------------
 var options = [];
 
-var more = [];
-
 var verify = 0;
 
 
@@ -19,68 +17,61 @@ function add() {
     document.forms["get_option"]["new_option"].value = "";
 }
 
-function sort (){
-    var rnd = Math.floor(Math.random() * options.length);
-    return rnd;
-}
-
-function show (rnd){
-    more = [];
-    if (options.length == 0){
-        $("h5").text("Sem Opção");
-    }else{
-        $("h5").text(options[rnd]);
-    }
+function new_list(rnd){
+    var more = [];
     for (var i = 0; i < options.length; i++){
         if (options[i] != options[rnd]){
             more.push(options[i]);
         }
     }
-    options = more;
+    return more;
+}
+
+function define (rnd){
+    if (options.length == 0){
+        $("h5").text("Sem Opção");
+    }else{
+        $("h5").text(options[rnd]);
+    }
+}
+
+function show (rnd){
+    define(rnd);
+    options = new_list(rnd);
     $(".the_list").text(options);
-    $("h5").css("display", "block");
-    $("h4").css("display", "block");
-    $(".button3").css("display", "block");
-    $(".button4").css("display", "block");
+    $(".show").css("display", "block");
 }
 
 function vanish (){
     $("h3").text("Restante:");
     $(".the_list").css("margin-bottom", "0");
-    $(".button2").css("display", "none");
-    $(".button").css("display", "none");
-    $(".explain").css("display", "none");
-    $("input").css("display", "none");
+    $(".vanish").css("display", "none");
 }
 
+
 function luck(){
-    rnd = sort();
+    var rnd = Math.floor(Math.random() * options.length);
     console.log(rnd);
     show(rnd);
     vanish();
 }
 
+function reload_sort(){
+        location.reload();
+}
+
+
+function display_text(){
+    if (!verify){
+        $("#doubt").css("display","block");
+        verify = 1;
+    }else{
+        $("#doubt").css("display","none");
+        verify = 0;
+    }
+}
 
 //---------------------Event--------------
-
-$(".button").click(add);
-
-
-$(".button2").click(
-    function(){
-        if (options.length == 0){
-            return false;
-        }else{
-            luck();
-        }
-});
-
-
-$(".button4").click(
-    function(){
-        location.reload();
-});
-
 
 $('form').keypress(
   function(event){
@@ -89,19 +80,3 @@ $('form').keypress(
         event.preventDefault();
     }
 });
-
-$(".doubt").click(
-    function(){
-        if (!verify){
-            $("#doubt").css("display","block");
-            verify = 1;
-        }else{
-            $("#doubt").css("display","none");
-            verify = 0;
-        }
-})
-
-$(".button3").click(
-    function(){
-        luck();
-    })
