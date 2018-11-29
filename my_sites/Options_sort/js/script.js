@@ -82,10 +82,19 @@ $('form').keypress(
 });
 
 $(".doubt").mouseout(function(){
-    if (verify == 1){
-        $("body").click(function(){
-            $("#doubt").css("display","none");
-            verify = 0;
-        })
+    if (verify){
+        verify_2 = true;
+    }
+})
+
+$(".doubt").mouseover(function(){
+    verify_2 = false;
+})
+
+$("body").click(function(){
+    if (verify_2){
+        $("#doubt").css("display","none");
+        verify = 0;
+        verify_2 = false;
     }
 })
