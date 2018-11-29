@@ -80,3 +80,12 @@ $('form').keypress(
         event.preventDefault();
     }
 });
+
+$(".doubt").mouseout(function(){
+    if (verify == 1){
+        $("body").click(function(){
+            $("#doubt").css("display","none");
+            verify = 0;
+        })
+    }
+})
