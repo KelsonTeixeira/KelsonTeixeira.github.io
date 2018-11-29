@@ -21,10 +21,19 @@
 @media only screen and (max-width: 480px) {
     .icon{font-size: 400%;}
     header {width: 100%; margin-left: 0;}
-    .doubt i{
+    .doubt i,
+    .doubt i:hover{
         top: 15px;
         right: 5%;
     }
+    .doubt p {
+        width: 50%; 
+        height: auto;
+        top: 15px;
+        right: 5%;
+        font-size: 80%;
+    }
+    
     h1{font-size: 200%;}
     h5{font-size: 250%; margin-top: 50px;}
     .button3,
@@ -32,6 +41,7 @@
         margin-top: 50px;
     }
     .button{margin-top: 30px;}
+    
     
 }
 
