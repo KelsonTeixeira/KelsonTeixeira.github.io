@@ -12,6 +12,7 @@ var verify_2 = false;
 //------------------functions----------------
 
 function add() {
+    $(".the_list").css("color", "#2c3e50");
     var op = document.forms["get_option"]["new_option"].value;
     options.push(" "+op);
     console.log(options);
@@ -32,6 +33,7 @@ function new_list(rnd){
 function define (rnd){
     if (options.length == 0){
         $("h5").text("Sem Opção");
+        $(".the_list").css("color", "transparent");
     }else{
         $("h5").text(options[rnd]);
     }
@@ -40,7 +42,12 @@ function define (rnd){
 function show (rnd){
     define(rnd);
     options = new_list(rnd);
-    $(".the_list").text(options);
+    if (options.length == 0){
+        $(".the_list").css("color", "transparent");
+        $(".the_list").text("vazio");
+    }else{
+        $(".the_list").text(options);
+    }    
     $(".show").css("display", "block");
 }
 

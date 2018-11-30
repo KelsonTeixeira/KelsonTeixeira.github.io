@@ -111,7 +111,7 @@ form p {
 
 .the_list {
     margin-top: 10px;
-    color: #2c3e50;
+    color: transparent;
     text-transform: uppercase;
     text-align: center;
     font-size: 60%;
@@ -119,6 +119,7 @@ form p {
     display: block;
     width: 80%;
     margin-left: 10%;
+    
 }
 
 .doubt i {

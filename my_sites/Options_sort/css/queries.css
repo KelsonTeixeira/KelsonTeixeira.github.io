@@ -20,7 +20,11 @@
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     .icon{font-size: 400%;}
-    header {width: 100%; margin-left: 0;}
+    header {
+        width: 100%; 
+        margin-left: 0;
+        height: 667px;
+    }
     .doubt i,
     .doubt i:hover{
         top: 15px;
