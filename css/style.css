@@ -88,9 +88,15 @@ h2:after {
 /*              Navegation bar                 */
 /*--------------------------------------------*/
 .barra{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.comportamento {
     display: inline-block;
     padding: 10px 0;
-    float: right;   
+    float: right;
 }
 .barra a:link,
 .barra a:visited{
@@ -110,10 +116,10 @@ h2:after {
 /*---------------------------------------------*/
 .sessao {
     background-color: #fff;
-    height: 85vh;
     border-bottom: 1px solid #000;
     width: 80%;
     margin-left: 10%;
+    padding: 40px 0 60px 0;
 }
 .sessao lista{
     margin-bottom: 40px;
@@ -128,31 +134,16 @@ h2:after {
     color: #000;
     font-size: 90%;    
 }
-/*----------sobre-----------*/
-.personal {
-    width: 70%;
-    margin-left: 15%;
-}
-.personal img{
-    height: 90px;
-    width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-}
-.personal h3 {
-    text-transform: uppercase;
-    color: #000;
-    font-size: 100%;
-    font-weight: 300;
-}
 /*---------------------Habilidades-----------*/
 .icones{
     display: inline-block;
     width: 80%;
     margin-left: 10%;
     text-align: center;
+    font-size: 40px;
+}
+.icones i {
+    margin-right: 30px;
 }
 .icones icon{
     margin: 20px;
@@ -162,12 +153,8 @@ h2:after {
 /*                  final section           */
 /*------------------------------------------*/
 .final {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./imagens/comp.jpeg");
     background-color: rgb(31, 30, 30);
-    height: 60vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    height: 400px;
 }
 .final h2 {
     margin: 0;
