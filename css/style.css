@@ -91,7 +91,7 @@ h2:after {
     position: fixed;
     z-index: 999;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: "transparent";
 }
 .comportamento {
     display: inline-block;

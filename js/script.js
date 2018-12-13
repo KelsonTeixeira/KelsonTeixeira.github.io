@@ -1,7 +1,8 @@
-$(window).on("scroll", function() {
-	var scrollHeight = $(document).height();
-	var scrollPosition = $(window).height() + $(window).scrollTop();
-	if (scrollPosition === 0) {
-	    $(".barra").css("background-color", "transparent");
-	}
-});
+$(window).on("scroll", function(){
+	if($(window).scrollTop()){
+        $(".barra").css("background-color", "rgb(0, 0, 0, 0.8)");
+    }else{
+        $(".barra").css("background-color", "transparent"); 
+    }
+})
+
