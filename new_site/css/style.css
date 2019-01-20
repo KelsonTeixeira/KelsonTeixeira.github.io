@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+html{
+    margin: 0;
+    font-family: 'Roboto', 'Arial';
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.row{
+    width: 100%;
+    margin: 0;
+}
+
+/***************************************************/
+ /*                     General                    */         
+/***************************************************/
+
+header {
+    background-image: url(image/back8.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+.pages{
+    width: 81%;
+    text-align: center;
+}
+
+.shadow {
+    height: 20px;
+    width: 474px;
+    background-color: none;
+    border-radius: 50%;
+    box-shadow: 0px 120px 70px #12191f;
+    margin: 0 auto;
+}
+
+.contact {
+    margin-top: 35vh;
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 150%;
+}
+
+i{
+    text-decoration: none;
+    color: #12191f;
+}
+
+.contact spam i{
+    margin-left: 62px;
+}
+
+  /***************************************************/
+ /*                      Navabar                    */         
+/***************************************************/
+.navbar {
+    position: fixed;
+    width: 19%;
+    height: 100vh;
+    top 0;
+    right: 0;
+    background-color: #12191f;
+    text-align: center;
+}
+
+img{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ecf0f1;
+}
+
+ul li{
+    list-style: none;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 80%;
+    cursor: pointer;
+    padding: 6px 10px;
+    transition: color 100ms;
+}
+
+li:hover{
+    color: #9bb9c1;
+}
+
+  /***************************************************/
+ /*                       HOME                      */         
+/***************************************************/
+
+.home {
+    text-align: center;
+    padding-top: 22%;
+}
+h1{
+    font-size: 320%;
+    font-weight: 400;
+    color: #12191f;
+}
+h2{
+    font-size: 175%;
+    font-weight: 400;
+    color: #12191f;
+}
+
+
+
+  /***************************************************/
+ /*                    Sections                     */         
+/***************************************************/
+
+section {
+    width: 81%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-31%, -50%);
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 10px;
+    color: #12191f;
+}
+
+section p {
+    text-align: justify;
+    width: 43%;
+    font-size: 90%;
+    color: #12191f;
+    word-spacing: 1px;
+}
+
+
+  /***************************************************/
+ /*              Incial comportament                */         
+/***************************************************/
+
+.about,
+.hability,
+.interest {
+    display: none;
+}
