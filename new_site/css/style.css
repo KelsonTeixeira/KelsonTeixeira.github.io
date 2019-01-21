@@ -14,19 +14,8 @@
 }
 
 html{
-    margin: 0;
     font-family: 'Roboto', 'Arial';
     font-size: 20px;
-}
-
-body {
-    width: 100%;
-    margin: 0;
-}
-
-.row{
-    width: 100%;
-    margin: 0;
 }
 
 /***************************************************/
@@ -46,16 +35,20 @@ header {
 }
 
 .shadow {
+    position: fixed;
+    top: 50vh;
+    left: 23%;
     height: 20px;
     width: 474px;
     background-color: none;
     border-radius: 50%;
     box-shadow: 0px 120px 70px #12191f;
-    margin: 0 auto;
 }
 
 .contact {
-    margin-top: 35vh;
+    position: fixed;
+    bottom: 10px;
+    left: 24.2%;
     display: inline-block;
     padding: 8px 10px;
     font-size: 150%;
@@ -67,7 +60,7 @@ i{
 }
 
 .contact spam i{
-    margin-left: 62px;
+    margin-left: 61px;
 }
 
   /***************************************************/
@@ -81,6 +74,7 @@ i{
     right: 0;
     background-color: #12191f;
     text-align: center;
+    box-shadow: 4px 5px 50px #12191f;
 }
 
 img{
@@ -134,11 +128,10 @@ h2{
 /***************************************************/
 
 section {
-    width: 81%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-31%, -50%);
+    width: 90%;
+    text-align: left;
+    margin-left: 31%;
+    padding-top: 16%;
 }
 h3 {
     text-transform: uppercase;
