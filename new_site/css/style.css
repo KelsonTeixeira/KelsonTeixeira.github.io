@@ -45,6 +45,8 @@ header {
     box-shadow: 0px 120px 70px #12191f;
 }
 
+/******************contact*************/
+
 .contact {
     position: fixed;
     bottom: 10px;
@@ -57,6 +59,11 @@ header {
 i{
     text-decoration: none;
     color: #12191f;
+    text-shadow: 0px 10px 30px transparent;
+}
+
+i:hover{
+     text-shadow: 0px 40px 35px #12191f;
 }
 
 .contact spam i{
@@ -86,7 +93,7 @@ img{
     border: 2px solid #ecf0f1;
 }
 
-ul li{
+li{
     list-style: none;
     margin-top: 30px;
     text-transform: uppercase;
@@ -96,10 +103,13 @@ ul li{
     cursor: pointer;
     padding: 6px 10px;
     transition: color 100ms;
+    text-shadow: 0px 10px 30px transparent;
+    
 }
 
 li:hover{
-    color: #9bb9c1;
+    
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
 }
 
   /***************************************************/
