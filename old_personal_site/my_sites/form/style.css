@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #efeded;
+    width: 100%;
+    margin: 0;
+}
+header{
+    background-image: url("./back.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    padding-top:70px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.inp:hover,
+.inp:active,
+.inp:visited,
+.inp{
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 300px;
+    outline: none;
+    margin-bottom: 60px;
+}
+.form_part{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 5px #000;
+    padding: 50px;
+    position: absolute;
+    top: 150px;
+}
+#church {
+    margin-right: 2px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+select {
+    background-color: #fff;
+    display: block;
+}
+
+input[type=submit]{
+    padding: 10px 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(back.jpg);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 13px;
+}
+input[type=submit]:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url(back.jpg);
+}
