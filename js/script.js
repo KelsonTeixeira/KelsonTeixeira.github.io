@@ -1,3 +1,5 @@
+var list_variable = 0;
+
 function about(){
     
     $(".interest").css("display", "none");
@@ -42,4 +44,16 @@ function home(){
     $(".project").css("display", "none");
     $(".home").fadeIn(400);
     
+}
+
+function list(){
+    if (list_variable == 0){
+        $(".navbar").css("display", "block");
+        $(".list").css("color", "#ecf0f1");
+        list_variable = 1;
+    }else{
+        $(".navbar").css("display", "none");
+        $(".list").css("color", "#12191f");
+        list_variable = 0;
+    }
 }

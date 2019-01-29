@@ -35,13 +35,13 @@ header {
 
 .shadow {
     position: fixed;
-    top: 345px;
+    top: 430px;
     left: 23%;
     height: 20px;
     width: 35%;
     background-color: none;
     border-radius: 50%;
-    box-shadow: 0px 120px 70px #12191f;
+    box-shadow: 0px 60px 70px #12191f;
 }
 
 /******************contact*************/
@@ -57,13 +57,13 @@ header {
     font-size: 150%;
 }
 
-i{
+.contact i{
     text-decoration: none;
     color: #12191f;
     text-shadow: 0px 10px 30px transparent;
 }
 
-i:hover{
+.contact i:hover{
      text-shadow: 0px 40px 35px #12191f;
 }
 
@@ -91,7 +91,7 @@ img{
     width: 160px;
     height: auto;
     border-radius: 50%;
-    border: 5px solid #54718b;
+    border: 5px solid #2a3a49;
 }
 
 li{
@@ -110,7 +110,11 @@ li{
 
 li:hover{
     
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+}
+
+.list {
+    display: none;
 }
 
   /***************************************************/
@@ -121,7 +125,7 @@ li:hover{
     text-align: center;
     width: 80%;
     margin-left: 10%;
-    padding: 226px;
+    padding-top: 225px;
 }
 h1{
     font-size: 320%;
@@ -144,7 +148,7 @@ section {
     width: 90%;
     text-align: left;
     margin-left: 31%;
-    padding-top: 16%;
+    padding-top: 210px;
 }
 h3 {
     text-transform: uppercase;
