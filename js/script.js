@@ -1,50 +1,7 @@
 var list_variable = 0;
+var next_position = 0;
+var sections = [".home", ".about", ".hability", ".interest"];
 
-function about(){
-    
-    $(".interest").css("display", "none");
-    $(".hability").css("display", "none");
-    $(".project").css("display", "none");
-    $(".home").css("display", "none");
-    $(".about").fadeIn(400);
-    
-}
-function hability(){
-    
-    $(".home").css("display", "none");
-    $(".about").css("display", "none");
-    $(".interest").css("display", "none");
-    $(".project").css("display", "none");
-    $(".hability").fadeIn(400);
-    
-}
-function interest(){
-    
-    $(".home").css("display", "none");
-    $(".about").css("display", "none");
-    $(".hability").css("display", "none");
-    $(".project").css("display", "none");
-    $(".interest").fadeIn(400);
-    
-}
-function project(){
-    
-    $(".home").css("display", "none");
-    $(".about").css("display", "none");
-    $(".hability").css("display", "none");
-    $(".interest").css("display", "none");
-    $(".project").fadeIn(400);
-    
-}
-function home(){
-    
-    $(".about").css("display", "none");
-    $(".hability").css("display", "none");
-    $(".interest").css("display", "none");
-    $(".project").css("display", "none");
-    $(".home").fadeIn(400);
-    
-}
 
 function list(){
     if (list_variable == 0){
@@ -56,4 +13,23 @@ function list(){
         $(".list").css("color", "#12191f");
         list_variable = 0;
     }
+}
+
+function value_receive(x){
+    next_position = x;
+    pass_next();
+}
+
+function pass_next(){
+    next_position++;
+    if (next_position == 4){
+        next_position = 0;
+    }
+       for (var i = 0; i < sections.length; i++){
+            if (i == next_position){
+                $(sections[i]).css("display", "block");
+            }else{
+                $(sections[i]).css("display", "none");
+            }            
+        }
 }

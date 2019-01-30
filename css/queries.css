@@ -47,7 +47,7 @@
         width: 80%;
         left: 10%;
         font-size: 150%;
-        top: 592px;
+        bottom: 20px;
     }
     
     .contact spam i{
@@ -82,6 +82,17 @@
         color: #12191f;
         font-size: 130%;
     }
+    
+    .next{
+        display: block;
+        position: absolute;
+        right: 10%;
+        bottom: 250px;
+        z-index: 997;
+        color: #12191f;
+        font-size: 130%;
+    }
+
 
 
       /***************************************************/
@@ -130,16 +141,9 @@
 }
 
 @media only screen and (max-width: 360px){
-  /******************contact*************/
-    .contact {
-        width: 90%;
-        left: 5%;
-    }
+ 
+    .contact {width: 90%; left: 5%;}
     
-    .contact spam i{
-        margin-left: 21px;
-    }
-    
-    .shadow {top: 380px;}
+    .contact spam i{margin-left: 21px;}
 
 }
