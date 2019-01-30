@@ -38,7 +38,7 @@
     .shadow {
         left: 5%;
         width: 90%;
-        box-shadow: 0px 440px 70px #12191f;
+        box-shadow: 0px 410px 70px #12191f;
     }
     
     /******************contact*************/
@@ -87,7 +87,7 @@
         display: block;
         position: absolute;
         right: 10%;
-        bottom: 250px;
+        bottom: 170px;
         z-index: 997;
         color: #12191f;
         font-size: 130%;
