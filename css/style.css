@@ -35,19 +35,19 @@ header {
 
 .shadow {
     position: fixed;
-    top: 430px;
+    top: 0px;
     left: 23%;
     height: 20px;
     width: 35%;
     background-color: none;
     border-radius: 50%;
-    box-shadow: 0px 60px 70px #12191f;
+    box-shadow: 0px 490px 70px #12191f;
 }
 
 /******************contact*************/
 
 .contact {
-    position: fixed;
+    position: absolute;
     bottom: 10px;
     width: 64.8%;
     left: 8.1%;
@@ -162,6 +162,26 @@ section p {
     font-size: 90%;
     color: #12191f;
     word-spacing: 1px;
+}
+
+  /***************************************************/
+ /*                      Footer                     */         
+/***************************************************/
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #0b1014;
+    text-align: center;
+    color: #ecf0f1;
+    padding: 15px;
+    font-size: 70%;
+    border-top: 2px solid #24333e;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ecf0f1;
 }
 
 

@@ -38,6 +38,7 @@
     .shadow {
         left: 5%;
         width: 90%;
+        box-shadow: 0px 440px 70px #12191f;
     }
     
     /******************contact*************/
@@ -46,6 +47,7 @@
         width: 80%;
         left: 10%;
         font-size: 150%;
+        top: 592px;
     }
     
     .contact spam i{
@@ -107,9 +109,10 @@
     /***************************************************/
 
     section {
+        height: 500px;
         width: 80%;
         margin-left: 10%;
-        padding-top: 200px;
+        padding-top: 130px;
     }
     h3 {font-size: 100%;}
 
@@ -120,7 +123,9 @@
         padding: 2px;
         border-radius: 5px;
     }
-
+    .interest{
+         padding-top: 160px;
+    }
 
 }
 
@@ -136,7 +141,5 @@
     }
     
     .shadow {top: 380px;}
-    
-     section {padding-top: 120px;}
 
 }
