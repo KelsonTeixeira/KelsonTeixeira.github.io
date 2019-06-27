@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vivi e Kelson</title>
+        <link rel="icon" href="./img/triangle.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!--link href="https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,600,600i,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"-->
+        <link rel="stylesheet" href = "./css/style.css">
+        <link href = "./css/queries.css" type = "text/css" rel = "stylesheet">
+
+    </head>
+
+    <header id="home">
+        <nav>
+            <div class = "barra">
+                <a href="#presenca" class="rsvp">RSVP</a>
+                <div class = "linkToSection">
+                    <a href = "#home">Home</a>
+                    <a href = "#historia">História</a>
+                    <a href = "#casamento">O Casamento</a>
+                    <a href = "#arrive">Como Chegar</a>
+                    <a href = "#lista">Lista de Presente</a>
+                    <a href="#recado">Deixe um recado</a>
+                </div>
+            </div>
+        </nav>     
+    </header>
+
+    <body id="key">
+
+        <div class="imageI"></div>
+
+        <div class="story section" id="historia">
+            <h2>Nossa História</h2>
+            <p>Quando se conheceram, ele era só um menino e ela uma universitária. Nem se quer passou pela
+                de ambos que algo podia acontecer. Após os 18 anos de idade, nota-se algo interessante, a diferença
+                de idade de 1 ano, 8 meses e 18 dias não era tão grande quanto pensavam. <br> <br>
+                Devido aos gostos similares, como Imagine Dragons, os aproxima, a passam a ser grandes amigos. 
+                Horas e horas de conversa após o ensaio ou na UnB pareciam minutos. Após um convite para assistir um
+                filme que ambos gostavam muito, começa então um romance. Sem saber o que queriam, resolvem terminar e após 
+                um mês longe um do do outro descobrem que o que queriam era estar junto com o outro. <br> <br>
+                Não demorou muito para perceberem que essa era uma história para vida inteira. Com 6 meses de namoro, Kelson,
+                com um anel de brinquedo, pede Virgínia em casamento e 2 anos depois, com um anel de noivado, pede de novo.
+                As duas vezes a resposta foi SIM!
+            </p>
+        </div>
+
+        <div class="imageII">
+            
+        </div>
+
+        <div class="event section" id="casamento">
+            <h2>O casamento</h2>
+        </div>
+
+        <div class="map section" id="arrive">
+            <h2>Como Chegar</h2>
+
+            <div class="mapBox">
+                <div></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28969.917662238066!2d-47.766260772861045!3d-15.679029138116878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3fc5ffc65691%3A0x2daaa66dc927fe78!2sCh%C3%A1cara+Felic%C3%ADssima+-+Espa%C3%A7o+para+Eventos!5e0!3m2!1spt-BR!2sbr!4v1561584847115!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div class="imageIII">
+            
+        </div>
+
+        <div class="list section" id="lista">
+            <h2>Lista de Casamento</h2>
+        </div>
+
+        <div class="confirm" id="presenca">
+            <h3>CONFIRMAR MINHA PRESENÇA</h3>
+
+            <div class="confbox">
+                <div class="inside">
+                    <p>Buscar seu primeiro nome:</p>
+                    <form>
+                        <div class="search">
+                            <input type="text" class="nameSearch" id="nameInput">
+                            <i class="fas fa-search lupa" id="searchBtn"></i>
+                        </div>
+                        <h4 class="select" id="select"></h4>
+                        <ul>
+                            <li id="liI"></li>
+                            <li id="liII"></li>
+                            <li id="liIII"></li>
+                            <li id="liIV"></li>
+                            <li id="liV"></li>
+                        </ul>
+                        <h4 class="hfound" id="hfd"></h4>
+                        <button type="button" class="btnCon" id="btnc">Confirmar</button>
+                    </form>            
+                </div>
+                <div class="infoCon">
+                    <p class="pkv">Casamento Vivi e Kelson</p>
+                    <p class="pdate">28 de Setembro de 2019, 16h30<br><br>Chácara Felicíssima</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="recado" id="recado">
+            <h2>Deixe um recado para os noivos</h2>
+            <div class="rcdBox">
+                <div class="msg">
+                    <p>Deixe aqui sua mensagem:</p>
+                    <form>                    
+                        <textarea id="msgInput" cols="45" rows="10" maxlength="350"></textarea>
+                        <p>Autor:</p>
+                        <input type="text" id="msgAuthor" placeholder="">
+                        <h4 id="msgAdvise"></h4>
+                        <button type="button" id="msgBtn" class="btnCon" row>Enviar</button>
+                    </form>
+                    
+                </div>
+                <div class="msgMural">
+                    <i class="fas fa-quote-left"></i>
+                    <p id="muralText">
+                        Deixe uma mensagem para nós ;)
+                    </p>
+                    <p id="muralAuthor">- Vivi e Kelson</p>
+                    
+                </div>
+            </div>
+        </div>
+  
+        
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>        
+        <script src="./js/init.js"></script>
+        <script src = "./js/fire.js"></script>
+        <script src="./js/alert.js"></script>
+        <script src="./js/behavior.js"></script>
+    </body>
+    <footer>
+        <p>Criado e desenvolvido por Kelson e Virgínia</p>
+        <div>
+            <a href="./confirmados/confirmados.html">confirmados</a>
+            <a href="./confirmados/adicionar.html">adicionar</a>
+            <a href="./confirmados/mensagem.html">mensagens</a>
+        </div>
+        
+    </footer>
+</html>
