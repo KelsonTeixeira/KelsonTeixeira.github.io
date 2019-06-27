@@ -77,7 +77,7 @@ header{
 /*Link to sections*/
 
 .linkToSection {
-    display: inline-block;
+    display: block;
     float: right;
 }
 
@@ -357,7 +357,7 @@ h4 {
     height: fit-content;
     min-height: 160px;
     background-color: #fff;
-    border-left: 1px solid #163e3a;*/
+    /*border-left: 1px solid #163e3a;*/
     padding: 20px;
 }
 
