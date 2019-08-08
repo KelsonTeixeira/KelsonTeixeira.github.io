@@ -42,8 +42,6 @@ class createSnake {
 
           this.velX = this.velY = 0;
 
-          this.clearSnake();
-
           this.gameBack.lose = true;
           this.gameBack.oldScore = this.gameBack.score; 
           this.gameBack.score = 0;
@@ -102,6 +100,7 @@ class createSnake {
       this.gameBack.lose = false;
       this.velX = this.vel;
       this.permision = false;
+      this.clearSnake();
     }    
 
   }
