@@ -2,179 +2,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Game</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snake Trail</title>
 
   <style>
     #root{
       text-align: center;
     }
+    body {
+      background-color: #ecf0f1;
+    }
+    h1 {
+      color: #2c3e50;
+      text-transform: uppercase;
+      padding-top: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
   </style>
 </head>
 <body>
   <div id="root">
-    <h1>SNAKE TRAIL</h1>
+    <h1>Snake Trail</h1>
   </div>
 
-  <script>
-    window.onload = function () {
-      theGame();
-    }
-
-    function theGame() {
-      const vel = 1;
-
-      let appleX = appleY = 15,
-          snakeX = snakeY = 2,
-          score = 0,
-          hardness = 13,
-          velX = 1,
-          velY = 0,
-          snakeTrail = [],
-          tail = 2,
-          gameDiv = 20,
-          horizontalPermission = false,
-          verticalPermission = true;
-
-      snakeTrail[0] = {"x": appleX,"y": appleY};
-
-      //console.log(`X: ${snakeTrail[0].x}, Y: ${snakeTrail[0].y}`);
-
-      
-
-      const app = document.getElementById('root');
-
-      const gameWindow = createCanvas(400, 400);     
-      app.appendChild(gameWindow);
-
-      setInterval(game, 1000/hardness);
-
-      function game() {
-        let gameContext = gameWindow.getContext('2d');
-
-        snakeX += velX;
-        snakeY += velY;
-
-        gameContext.fillStyle = '#2c3e50';
-        gameContext.fillRect(0, 0, gameWindow.width, gameWindow.height);
-
-        gameContext.fillStyle = '#e74c3c';
-        gameContext.beginPath();
-        gameContext.arc((appleX * gameDiv) + (gameDiv/2),(appleY * gameDiv) + (gameDiv/2), gameDiv/2.5, 0, 2 * Math.PI);
-        gameContext.fill();
-        //gameContext.fillRect(appleX * gameDiv, appleY * gameDiv, gameDiv - 3 , gameDiv -3 );
-
-        gameContext.font = "14px Arial";
-        gameContext.fillStyle = '#fff';
-        gameContext.fillText(score, 370, 20);
-
-        if(snakeX < 0){
-          snakeX = gameDiv - 1;
-        } else if (snakeX >= gameDiv){
-          snakeX = 0;
-        }else if(snakeY < 0){
-          snakeY = gameDiv - 1;
-        }else if(snakeY > gameDiv){
-          snakeY = 0;
-        }
-        
-        for(let a = tail -1; a >= 0; a--){
-          if (a != 0){
-            snakeTrail[a] = snakeTrail[a - 1];
-          }else{
-            snakeTrail[0] = {"x":snakeX, "y":snakeY};
-          }          
-        }
-
-        for(let i = 0; i < snakeTrail.length; i++){
-          if (i == 0){
-            gameContext.fillStyle ='#e67e22';
-          }else{
-            gameContext.fillStyle ='#2ecc71';
-          }
-          
-          //console.log(`${i}, ${snakeTrail[i]} `)
-          gameContext.fillRect(snakeTrail[i].x * gameDiv, snakeTrail[i].y * gameDiv, gameDiv - 2, gameDiv - 2);
-
-          if (i != 0 && snakeTrail[0].x == snakeTrail[i].x && snakeTrail[0].y == snakeTrail[i].y){
-            velX = velY = 0;
-            score = 0;
-            //console.log('GAME OVER!');
-            gameContext.font = "30px Arial";
-            gameContext.fillStyle = '#fff';
-            gameContext.fillText(`GAME OVER`, 120, 200);
-            tail = 2;
-            while (snakeTrail.length > tail){
-              snakeTrail.pop();
-            }
-          }
-        }
-
-        
-        
-        if(snakeX == appleX && snakeY == appleY){
-          tail++;
-          score += 10;
-          appleX = Math.floor(Math.random() * 19) + 1;
-          appleY = Math.floor(Math.random() * 19) + 1;
-          //console.log(score);
-        }
-
-      }
-
-      document.addEventListener('keydown', () => {
-        console.log(event.keyCode);
-        switch(event.keyCode){
-          case 37:
-            if (horizontalPermission){
-              velX = -vel;
-              velY = 0;
-              horizontalPermission = false;
-              verticalPermission = true;
-            }            
-            break;
-          case 39:
-            if (horizontalPermission){
-              velX = vel;
-              velY = 0;
-              horizontalPermission = false;
-              verticalPermission = true;
-            }
-            break;
-          case 38:
-            if (verticalPermission){
-              velY = -vel;
-              velX = 0;
-              horizontalPermission = true;
-              verticalPermission = false;
-            }
-            break;
-          case 40:
-            if (verticalPermission){
-              velY = vel;
-              velX = 0;
-              horizontalPermission = true;
-              verticalPermission = false;
-            }
-            break;
-          /*case 32:
-            velX = velY = 0;
-            break;*/
-          default: 
-            
-            break;
-        }
-      });
-
-    }
-
-    function createCanvas (width, height) {
-      const canvas = document.createElement('canvas');
-      canvas.width = width;
-      canvas.height = height;
-      return canvas;
-    }
-    
-  </script>
-  
+  <script src="./snake.js"></script>
 </body>
 </html>
