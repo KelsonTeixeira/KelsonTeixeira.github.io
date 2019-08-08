@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-color: #ecf0f1;
+}
+
+h1 {
+  color: #2c3e50;
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#root{
+  text-align: center;
+}
+
+.buttons {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  canvas {
+    height: 350px;
+    width: 350px;
+  }
+  .buttons{
+    display: block;
+    margin-top: 20px;
+    width: 100vw;
+  }
+
+  button{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #ecf0f1;
+    background-color: #16a085;
+  }
+
+  .div-side {
+    margin: 20px auto;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

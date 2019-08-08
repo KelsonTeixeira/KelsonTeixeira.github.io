@@ -80,16 +80,16 @@ class createSnake {
     }
     if(!this.gameBack.lose){
 
-      if((theKeyCode == 37 || theKeyCode == 65) && this.permision){
+      if((theKeyCode == 37 || theKeyCode == 65) && this.permision){//left
         setXY(-this.vel, 0);
         this.permision = !this.permision;
-      }else if((theKeyCode == 38 || theKeyCode == 87) && !this.permision){
+      }else if((theKeyCode == 38 || theKeyCode == 87) && !this.permision){//up
         setXY(0, -this.vel);
         this.permision = !this.permision;
-      }else if((theKeyCode == 39 || theKeyCode == 68) && this.permision){
+      }else if((theKeyCode == 39 || theKeyCode == 68) && this.permision){//right
         setXY(this.vel, 0);
         this.permision = !this.permision;
-      }else if((theKeyCode == 40 || theKeyCode == 83) && !this.permision){
+      }else if((theKeyCode == 40 || theKeyCode == 83) && !this.permision){//down
         setXY(0, this.vel);
         this.permision = !this.permision;
       }else{
@@ -200,6 +200,43 @@ function createCanvas(app, width, height){
   return canvas;
 }
 
+function createButton(app){
+  const div = document.createElement('div');
+  div.setAttribute('class', 'buttons');
+  app.appendChild(div);
+
+  const up = document.createElement('button');
+  up.setAttribute('type', 'button');
+  up.setAttribute('id', 'up');
+  up.textContent = 'UP';
+  div.appendChild(up);
+
+  const divSide = document.createElement('div');
+  divSide.setAttribute('class', 'div-side');
+  div.appendChild(divSide);
+
+  const left = document.createElement('button');
+  left.setAttribute('type', 'button');
+  left.setAttribute('id', 'left');
+  left.textContent = '< LEFT';
+  divSide.appendChild(left);
+
+  const right = document.createElement('button');
+  right.setAttribute('type', 'button');
+  right.setAttribute('id', 'right');
+  right.textContent = 'RIGHT >';
+  divSide.appendChild(right);
+  
+  const down = document.createElement('button');
+  down.setAttribute('type', 'button');
+  down.setAttribute('id', 'down');
+  down.textContent = 'DOWN';
+  div.appendChild(down);
+
+
+  return div;
+}
+
 window.onload = () => {
 
   const app = document.getElementById('root');
@@ -211,10 +248,7 @@ window.onload = () => {
   const snake = new createSnake (gameContext, gameDiv, gameBack);
   const apple = new createApple(snake, gameContext, gameDiv, gameBack);
 
-  document.addEventListener('keydown', () => {
-    console.log(event.keyCode);
-    snake.setVel(event.keyCode);
-  });
+  createButton(app); //mobile buttons
 
   setInterval(function (){
     gameBack.draw();
@@ -222,5 +256,33 @@ window.onload = () => {
     apple.draw();
 
   }, 1000/13);
+
+  //Controls
+  document.addEventListener('keydown', () => {
+    console.log(event.keyCode);
+    snake.setVel(event.keyCode);
+  });
+
+  //mobile
+  const up = document.getElementById('up');
+  up.addEventListener('click', function(){
+    snake.setVel(38);
+  });
+
+  const down = document.getElementById('down');
+  down.addEventListener('click', function(){
+    snake.setVel(40);
+  });
+
+  const left = document.getElementById('left');
+  left.addEventListener('click', function(){
+    snake.setVel(37);
+  });
+
+  const right = document.getElementById('right');
+  right.addEventListener('click', function(){
+    snake.setVel(39);
+  });
+
 
 }
