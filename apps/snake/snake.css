@@ -35,6 +35,11 @@ h1 {
   canvas {
     height: 350px;
     width: 350px;
+    margin-top: 5px;
+  }
+
+  h1{
+    display: none;
   }
   .buttons{
     display: block;
@@ -52,9 +57,12 @@ h1 {
   }
 
   .div-side {
-    margin: 20px auto;
+    margin: 2px auto;
     width: 250px;
     display: flex;
     justify-content: space-between;
+  }
+  #restart {
+    display: none;
   }
 }

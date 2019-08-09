@@ -45,6 +45,9 @@ class createSnake {
           this.gameBack.lose = true;
           this.gameBack.oldScore = this.gameBack.score; 
           this.gameBack.score = 0;
+          this.clearSnake(); 
+
+          document.getElementById('restart').style.display = 'block';        
 
           console.log("YOU LOSE!");
 
@@ -100,7 +103,7 @@ class createSnake {
       this.gameBack.lose = false;
       this.velX = this.vel;
       this.permision = false;
-      this.clearSnake();
+      document.getElementById('restart').style.display = 'none';
     }    
 
   }
@@ -221,6 +224,12 @@ function createButton(app){
   left.textContent = '< LEFT';
   divSide.appendChild(left);
 
+  const restart = document.createElement('button');
+  restart.setAttribute('type', 'button');
+  restart.setAttribute('id', 'restart');
+  restart.textContent = 'RESTART';
+  divSide.appendChild(restart);
+
   const right = document.createElement('button');
   right.setAttribute('type', 'button');
   right.setAttribute('id', 'right');
@@ -282,6 +291,11 @@ window.onload = () => {
   const right = document.getElementById('right');
   right.addEventListener('click', function(){
     snake.setVel(39);
+  });
+
+  const restart = document.getElementById('restart');
+  restart.addEventListener('click', function(){
+    snake.setVel(32);
   });
 
 
