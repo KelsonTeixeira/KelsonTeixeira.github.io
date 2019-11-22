@@ -1,16 +1,20 @@
 var list_variable = 0;
 var next_position = 0;
-var sections = [".home", ".about", ".hability", ".interest"];
+const navbar = document.getElementById('navbar');
+const listIcon = document.getElementById('list');
+const sections = document.getElementsByTagName('section');
+
+console.log(navbar);
 
 
 function list(){
-    if (list_variable == 0){
-        $(".navbar").css("display", "block");
-        $(".list").css("color", "#ecf0f1");
+    if (list_variable === 0){
+        navbar.style.height = '270px';
+        listIcon.style.color = '#ecf0f1';
         list_variable = 1;
     }else{
-        $(".navbar").css("display", "none");
-        $(".list").css("color", "#12191f");
+        navbar.style.height = '0';
+        listIcon.style.color = '#12191f';
         list_variable = 0;
     }
 }
@@ -25,11 +29,11 @@ function pass_next(){
     if (next_position == 4){
         next_position = 0;
     }
-       for (var i = 0; i < sections.length; i++){
-            if (i == next_position){
-                $(sections[i]).css("display", "block");
-            }else{
-                $(sections[i]).css("display", "none");
-            }            
+    for(let i = 0; i < sections.length; i++){
+        if(i === next_position){
+            sections[i].style.display = 'flex';
+        }else{
+            sections[i].style.display = 'none';
         }
+    }
 }
