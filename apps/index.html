@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Meus Projetos</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+        <meta name="description" content="">
+ 
+        <link rel="icon" href="./img/icon.png">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/queries.css">
+    </head>
+    <body>      
+        
+        <div id="root"></div>
+
+        <script src="./js/apps.js"></script>
+        <script>
+
+            console.log(typeof(apps));
+
+            const root = document.getElementById('root');
+
+            const header = document.createElement('header');
+            header.textContent = 'Meus Projetos';
+            root.appendChild(header);
+
+            const projectList = document.createElement('div');
+            projectList.setAttribute('class', 'project-list');
+            root.appendChild(projectList);
+
+            apps.map(project => {
+
+                const box = document.createElement('div');
+                box.setAttribute('class', 'box');
+                projectList.appendChild(box);
+
+                const title = document.createElement('h2');
+                title.textContent = project.name;
+                box.appendChild(title);
+
+                const img = document.createElement('img');
+                img.setAttribute('src', project.image_url);
+                img.setAttribute('alt', 'web page image');
+                img.addEventListener('click', () => (window.open(project.url, '_blank')));
+                box.appendChild(img);
+
+                const description = document.createElement('p');
+                description.textContent = project.description;
+                box.appendChild(description);
+
+                const url = document.createElement('a');
+                url.setAttribute('href', project.url);
+                url.setAttribute('class', 'url');
+                url.setAttribute('target', '_blank');
+                url.textContent = 'Visitar Página';
+                box.appendChild(url);
+
+                const gitUrl = document.createElement('a');
+                gitUrl.setAttribute('href', project.git_url);
+                gitUrl.setAttribute('class', 'git-url');
+                gitUrl.setAttribute('target', '_blank');
+                gitUrl.textContent = 'Github Folder';
+                box.appendChild(gitUrl);
+            });
+
+        </script>
+    </body>
+</html>

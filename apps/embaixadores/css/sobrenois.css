@@ -1,0 +1,81 @@
+*{/*reseta tudo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+header{
+    height: 100vh;
+    background-image: url(image/back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    float: left;
+    height: 50px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+h1{
+    font-size: 200%;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+h1:after {
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 22vw;
+    background-color: #fff;
+    content: " ";
+    margin-top: 10px;
+}
+h1:before {
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 22vw;
+    background-color: #fff;
+    content: " ";
+    margin-bottom: 10px;
+}
+p{
+    color: #fff;
+    font-size: 100%;
+    margin-top: 100px;
+    text-align: justify;
+    padding: 40px 50px;
+    border: 2px solid #fff;
+    word-spacing: 4px;
+}
+.sobre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.social{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    
+}
+.social img{
+    height: 30px;
+    width: auto;
+    margin: 0 15px;
+    padding: 2px;
+    border: transparent;
+}
+.social img:hover,
+.social img:active{
+    border: 1px solid #000;
+}

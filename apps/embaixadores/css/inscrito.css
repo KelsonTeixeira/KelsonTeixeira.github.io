@@ -1,0 +1,67 @@
+*{/*reseta tudo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(image/back.jpg);
+}
+header img{
+    height: 200px;
+    width: auto; 
+}
+.social{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    
+}
+.social img{
+    height: 30px;
+    width: auto;
+    margin: 0 15px;
+    padding: 2px;
+    border: transparent;
+}
+.social img:hover,
+.social img:active{
+    border: 1px solid #fff;
+}
+.principal {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 200%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 80%;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.logo{
+    float: left;
+    height: 50px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+}

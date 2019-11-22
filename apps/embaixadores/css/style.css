@@ -1,0 +1,139 @@
+*{/*reseta tudo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(image/back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+}
+.logo{
+    float: left;
+    height: 60px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.navegacao{
+    float: right;
+    margin-top: 10px;
+}
+.navegacao a:link,
+.navegacao a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 80%;
+    font-weight: 400;
+    padding-bottom: 4px;
+    border-bottom: transparent;
+}
+.navegacao a:hover,
+.navegacao a:active{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 80%;
+    font-weight: 400;
+    border-bottom: 2px solid #fff;
+}
+.principal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.principal img{
+    height: 300px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 195%;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+h2{
+    text-align: center;
+    color: #fff;
+    font-size: 148%;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 10px;  
+}
+.botoes{
+    display: inline-block;
+    margin-top: 30px;
+}
+.botoes a{
+    text-decoration: none;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+.botao1:link,
+.botao1:visited{
+    color: #fff;
+    background-color: transparent;
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    margin-right: 114px;
+    margin-left: 5px;
+}
+.botao1:hover,
+.botao1:active {
+    color: #222324;
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    margin-right: 114px;
+    margin-left: 5px;
+}
+.botao2:link,
+.botao2:visited {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 54px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+}
+.botao2:hover,
+.botao2:active {
+    background-color: #fff;
+    color: #222324;
+    padding: 8px 54px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+}
+.social{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    
+}
+.social img{
+    height: 30px;
+    width: auto;
+    margin: 0 15px;
+    padding: 2px;
+    border: transparent;
+}
+.social img:hover,
+.social img:active{
+    border: 1px solid #fff;
+}
