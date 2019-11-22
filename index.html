@@ -12,10 +12,6 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
         
         <link rel="icon" href = "image/robot-solid.png">
-
-        <script
-            src="./js/jquery-3.3.1.js">
-        </script>
         
         <title>Kelson Teixeira</title>      
 
@@ -25,71 +21,38 @@
          
         <header>
             
-            <div class = "list">
+            <div class = "list" id='list'>
                 <i class="fas fa-bars" onclick= "list()"></i>
             </div>
-            
-            <div class = "navbar">
-
-                <img src = "./image/perfil.png">
-
-                <div class = "sections_list">
-
-                    <ul>
-                        <li onclick="value_receive(3)">Home</li>
-                        <li onclick="value_receive(0)">sobre</li>
-                        <li onclick="value_receive(1)">Habilidades</li>
-                        <li onclick="value_receive(2)">Interesses</li>
-                        <!-- li onclick="project()">projetos</li -->
-                    </ul>
-
-                </div>
-
-            </div>
-
 
             <div class="pages">                
-                <div class = "home">
+
+                <div class = "shadow"></div>
+
+                <section class = "home">
 
                     <h1>Kelson Teixeira</h1>
                     <h2>Graduando em Mecatrônica</h2>
 
-                </div>
-
-                <div class = "shadow"></div>
-
-                <div class = "contact">
-                    
-                    <a href = "https://github.com/KelsonTeixeira" target="_blank"><i class="fab fa-github"></i></a>
-
-                    <spam>
-                        <a href = "https://www.youtube.com/user/kelson1231000" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href = "mailto:txkelson@hotmail.com"><i class="far fa-envelope"></i></a>
-                        <a href = "https://www.instagram.com/kelson_tx/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href = "./docs/Kelson_Curriculo.pdf" download><i class="far fa-id-card"></i></a>
-                    </spam>
-
-                </div> 
+                </section>
 
                 <section class = "about">
                     <h3>sobre</h3>
                     <p>
-                        Sou estudante de Engenharia de Controle e Autamação (Mecatrônica) na Universidade de Brasília, UnB.
-                        Sou formado em inglês avançado pelo Centro Interescolar de Línguas, CIL.
-                        Atualmente tenho me dedicado a aprender desenvolvimento web, com foco no Front-End.
-                        Sou Cristão, Músico, skatista e acredito que criatividade é essencial para existência humana.
+                        Graduando em Engenharia de Controle e Autamação (Mecatrônica) na Universidade de Brasília, UnB.
+                        Formado em inglês avançado pelo Centro Interescolar de Línguas, CIL.
+                        Tenho me dedicado ao desenvolvimento web, com foco em ReactJs e NodeJs.
+                        Atualmente trabalho na Universidade Paulista como técnico de laboratório.
                     </p>
                 </section>
 
                 <section class = "hability">
                     <h3>habilidades</h3>
                     <p>
-                        Eu sou programador e músico.
-                        Sei programar em C, em Python e JavaScrip. Sei desenvolver GUI em Tkinter.                        
-                        Atualmente estou me dedicando dominar React JS.
-                        Sei HTML5 e CSS3.
-                        Tenho conhecimento em Arduino, desenvolvendo projetos pessoais.
-                        Tenho experiência como intérprete da Língua Inglesa.
+                        Programação e música.
+                        Linguagens de programação e ferramentas: C, Python, Tkinter, NodeJs, ReactJs, HTML e CSS.                        
+                        Conhecimento em Arduino por do desenvolvimento de projetos pessoais.
+                        Experiência como intérprete da Língua Inglesa.
                     </p>
                 </section>
 
@@ -97,20 +60,42 @@
                     <h3>interesses</h3>
                     <p>
                         Tenho muito interesse na área de desenvolvimento de softwares e Web App's. 
-                        Front-End tem sido foco da minha dedicação. Mas estou sempre disposto a novas áreas de atuação.
-                        Tenho em mim também o desejo de desenvolvimento de hardware.
+                        Tenho me dedicado ao JavaScript e seus frameworks, mas sempre aberto a novas áreas do conhecimento.
+                        Tenho em mim também o desejo de desenvolvimento de hardware e internet das coisas.
                     </p>
                 </section>
                 <div class = "next">
                     <i class="fas fa-arrow-circle-right" onclick="pass_next()"></i>
                 </div>
-            </div>
-        </header>
-        <!-- footer>
-            created and disigned by <a href = "http://github.com/KelsonTeixeira">Kelson Teixeira</a>        
-        </footer -->
-    </body>
 
-    <script src = "./js/script.js"></script>
+                <div class = "contact">
+                    
+                    <a href = "https://github.com/KelsonTeixeira" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href = "https://www.youtube.com/user/kelson1231000" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href = "mailto:txkelson@hotmail.com"><i class="far fa-envelope"></i></a>
+                    <a href = "https://www.instagram.com/kelson_tx/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href = "https://www.linkedin.com/in/kelson-teixeira-b6524218a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                </div> 
+            </div>
+
+            <div class = "navbar" id='navbar'>
+                <img src = "./image/perfil.png" alt="perfil image">
+
+                <div class = "sections_list">
+                    <ul>
+                        <li onclick="value_receive(3)">Home</li>
+                        <li onclick="value_receive(0)">sobre</li>
+                        <li onclick="value_receive(1)">Habilidades</li>
+                        <li onclick="value_receive(2)">Interesses</li>
+                        <a href="./apps" target="_blank"><li>projetos</li></a>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+
+        <script src = "./js/script.js"></script>
+    </body>
     
 </html>
