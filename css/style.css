@@ -1,36 +1,41 @@
+/*     Inicial definitions */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.clearfix {zoom: 1;}
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+    outline: 0;
 }
 
 html{
     font-family: 'Roboto', 'Arial';
     font-size: 20px;
 }
+a {
+    text-decoration: none;
+}
 
-  /**************************************************/
- /*                     General                    */         
-/**************************************************/
+/**/
 
 header {
-    background-image: url(image/back8.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(image/back8.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .pages{
-    width: 81%;
+    width: 80%;
+    height: 100%;
+}
+
+.navbar {
+    width: 20%;
+    height: 100%;
+    background-color: #12191f;
+    text-align: center;
+    box-shadow: 0 0 50px #12191f;
 }
 
 .shadow {
@@ -44,48 +49,36 @@ header {
     box-shadow: 0px 490px 70px #12191f;
 }
 
-/******************contact*************/
+
+
 
 .contact {
     position: absolute;
-    bottom: 10px;
-    width: 64.8%;
-    left: 8.1%;
-    text-align: center;
-    display: inline-block;
-    padding: 8px 10px;
-    font-size: 150%;
+    left: 0;
+    bottom: 20px;
+    width: 80%;
+    height: fit-content;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25% 20px;
 }
 
 .contact i{
-    text-decoration: none;
     color: #12191f;
     text-shadow: 0px 10px 30px transparent;
+    font-size: 150%;
 }
 
 .contact i:hover{
-     text-shadow: 0px 40px 35px #12191f;
+    text-shadow: 0px 40px 35px #12191f;
+    opacity: 0.9;
 }
 
-.contact spam i{
-    margin-left: 61px;
-}
 
-  /***************************************************/
- /*                      Navabar                    */         
-/***************************************************/
-.navbar {
-    position: fixed;
-    width: 19%;
-    height: 100vh;
-    top 0;
-    right: 0;
-    background-color: #12191f;
-    text-align: center;
-    box-shadow: 4px 5px 50px #12191f;
-}
 
-img{
+
+.navbar img{
     margin-top: 50px;
     margin-bottom: 30px;
     width: 160px;
@@ -94,7 +87,7 @@ img{
     border: 5px solid #2a3a49;
 }
 
-li{
+.navbar ul li{
     list-style: none;
     margin-top: 30px;
     text-transform: uppercase;
@@ -103,39 +96,44 @@ li{
     font-size: 80%;
     cursor: pointer;
     padding: 6px 10px;
-    transition: color 100ms;
+    transition: all 0.2s;
     text-shadow: 0px 10px 30px transparent;
-    
 }
 
-li:hover{
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+.navbar ul li:hover{
+    /* opacity: 0.8; */
+    text-shadow: 1px 1px 5px #fff;
 }
 
-.list {
-    display: none;
+.list{
+    display:none;
+    position: fixed;
+    top: 15px;
+    right: 17px;
+    z-index: 999;
+    color: #12191f;
+    font-size: 130%;
 }
 
 .next{
     display: none;
+    position: absolute;
+    right: 13%;
+    bottom: 100px;
+    z-index: 997;
+    color: #12191f;
+    font-size: 130%;
 }
 
-  /***************************************************/
- /*                       HOME                      */         
-/***************************************************/
 
-.home {
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    padding-top: 225px;
-}
-h1{
+
+
+.home h1{
     font-size: 320%;
     font-weight: 400;
     color: #12191f;
 }
-h2{
+.home h2{
     font-size: 175%;
     font-weight: 400;
     color: #12191f;
@@ -143,26 +141,27 @@ h2{
 
 
 
-  /***************************************************/
- /*                    Sections                     */         
-/***************************************************/
+  
+
 
 section {
-    width: 90%;
-    text-align: left;
-    margin-left: 31%;
-    padding-top: 210px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h3 {
     text-transform: uppercase;
     font-size: 110%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #12191f;
 }
 
 section p {
     text-align: justify;
-    width: 43%;
+    width: 40%;
     font-size: 90%;
     color: #12191f;
     word-spacing: 1px;
@@ -171,22 +170,6 @@ section p {
   /***************************************************/
  /*                      Footer                     */         
 /***************************************************/
-
-footer {
-    height: 50px;
-    width: 100%;
-    background-color: #0b1014;
-    text-align: center;
-    color: #ecf0f1;
-    padding: 15px;
-    font-size: 70%;
-    border-top: 2px solid #24333e;
-}
-
-footer a{
-    text-decoration: none;
-    color: #ecf0f1;
-}
 
 
   /***************************************************/

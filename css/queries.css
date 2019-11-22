@@ -1,150 +1,76 @@
 /* Big tablet to 1200px (widths smaller taht the 1140px row) */
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
     
-}
+} */
 
 
 /* Small tablet to big tablet: from 768px to 1023px */
-@media only screen and (max-width: 1023px) {
+/* @media only screen and (max-width: 1023px) {
 
-}
+} */
 
 
 /* Small phones to small tablets: from 481px to 767px */
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     
-}
-
-
+} */
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
 
-      /**************************************************/
-     /*                     General                    */         
-    /**************************************************/
-    .pages{
-        height: 100vh;
-        width: 100%;
-    }
-
     header {
         background-image: url(image/back_mobile.jpg);
-        background-size: cover;
-        height: 100vh;
         background-position: left;
     }
-    
-    .shadow {
-        left: 5%;
-        width: 90%;
-        box-shadow: 0px 410px 70px #12191f;
-        display: none;
+
+    .pages{
+        width: 100%;
     }
     
-    /******************contact*************/
+    .shadow {display: none;}
+    
 
     .contact {
-        width: 80%;
-        left: 10%;
-        font-size: 150%;
-        bottom: 20px;
-    }
-    
-    .contact spam i{
-        margin-left: 23px;
+        width: 100%;
+        font-size: 100%;
+        padding: 0 15% 10px;
     }
 
-
-
-      /***************************************************/
-     /*                      Navabar                    */         
-    /***************************************************/
     .navbar {
+        position: absolute;
         width: 150px;
-        height: 270px;
+        height: 0;
         top: 10px;
         right: 10px;
         text-align: left;
-        box-shadow: 0px 0px 10px #12191f;
+        box-shadow: 0px 0px 20px #12191f;
         border-radius: 5px;
-        display: none;
         z-index: 998;
+        transition: 0.5s;
+        overflow: hidden;
     }
 
-    img{display: none;}
+    .navbar img{display: none;}
 
-    .list{
-        display:block;
-        position: fixed;
-        top: 15px;
-        right: 17px;
-        z-index: 999;
-        color: #12191f;
-        font-size: 130%;
-    }
+    .list{display:block;}
     
-    .next{
-        display: block;
-        position: absolute;
-        right: 13%;
-        bottom: 150px;
-        z-index: 997;
-        color: #12191f;
-        font-size: 130%;
+    .next{display: block;}
+
+    section{
+        background-color: rgb(237, 241, 241, 0.5);
+        padding-bottom: 150px;
     }
 
+    section p { width: 80%;}
 
-
-      /***************************************************/
-     /*                       HOME                      */         
-    /***************************************************/
-
-    .home {
-        width: 90%;
-        margin-left: 5%;
-        padding-top: 250px;
+    .home h1{
+        font-size: 220%;
     }
-    
-    h1{
-        font-size: 210%;
-        text-shadow: 0px 0px 5px #ecf0f1;
+    .home h2{
+        font-size: 118%;
     }
-    
-    h2{
-        font-size: 114%;
-        text-shadow: 0px 0px 5px #ecf0f1;
-    }
-    
-      /***************************************************/
-     /*                    Sections                     */         
-    /***************************************************/
-
-    section {
-        height: 500px;
-        width: 80%;
-        margin-left: 10%;
-        padding-top: 130px;
-    }
-    h3 {font-size: 100%;}
-
-    section p {
-        width: 100%;
-        font-size: 85%;
-        background-color: rgba(236, 240, 241, 0.4);
-        padding: 2px;
-        border-radius: 5px;
-    }
-    .interest{
-         padding-top: 160px;
-    }
-
 }
 
-@media only screen and (max-width: 360px){
- 
-    .contact {width: 90%; left: 5%;}
-    
-    .contact spam i{margin-left: 21px;}
+/* @media only screen and (max-width: 360px){
 
-}
+} */
