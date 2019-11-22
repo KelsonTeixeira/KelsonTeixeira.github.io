@@ -9,7 +9,7 @@ console.log(navbar);
 
 function list(){
     if (list_variable === 0){
-        navbar.style.height = '270px';
+        navbar.style.height = '320px';
         listIcon.style.color = '#ecf0f1';
         list_variable = 1;
     }else{
