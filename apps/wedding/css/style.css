@@ -1,0 +1,667 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #091a18;
+    color: #fff;
+    font-weight: 200;
+    font-size: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* _________________NAVBAR_______________*/
+    .barra{
+        position: fixed;
+        z-index: 998;
+        width: 100%;
+        background-color: #EBB5B5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+    }
+    /*Presence Button*/
+    .rsvp {
+        font-size: 70%;
+        font-weight: 200;
+        padding: 7px 15px;
+        background-color: #163e3a;
+        margin-left: 20px;
+        color: #fff;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        cursor: pointer;
+        transition: all, 0.5s;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .rsvp:hover,
+    .rsvp:active {
+        background-color:  rgb(9, 49, 43);
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /*Link to sections*/
+
+    .linkToSection {
+        display: inline-block;
+    }
+
+    .linkToSection a:link,
+    .linkToSection a:visited{
+        color:#163e3a;
+        margin: 0 40px;
+        text-decoration: none;
+        font-size: 65%;
+        font-weight: 200;
+        transition: all, 0.5s;
+        text-transform: uppercase;
+    }
+    .linkToSection a:hover,
+    .linkToSection a:active{
+        color: #fff;
+    }
+
+    .menu {
+        display: none;
+    }
+
+/*_____________Home___________*/
+
+    header{
+        background-color: #EBB5B5;
+        background-position: center;
+        background-size: cover;  
+        height: 100vh; 
+        min-height: 650px;
+    }
+
+    .home-template {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .home-template img {
+        height: 550px;
+        min-height: 500px;
+        width: auto;
+    }
+
+    .our-name{
+        width: 300px;
+    }
+
+    .our-date{
+        width: 300px;
+    }
+
+    .our-name p{
+        text-align: justify;
+        width: 100%;
+        font-size: 200%;
+        letter-spacing: 13.5px;
+        word-spacing: 10px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0;
+    }
+
+    .our-name p:last-child{
+        letter-spacing: 16.5px;
+        margin-top: -10px;
+    }
+
+    .our-date p{
+        text-align: justify;
+        width: 100%;
+        font-size: 150%;
+        letter-spacing: 13.5px;
+        word-spacing: none;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0;
+    }
+
+    .our-date p:last-child{
+        font-size: 115%;
+        letter-spacing: 7px;
+    }
+
+    .home-cell {
+        display: none;
+    }
+
+/*--------------------------------------*/
+/*_______________Sections_________________*/
+
+.section {
+    height: 100vh;
+    min-height: 655px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 160%;
+    font-weight: 600;
+    color: #163e3a;
+    padding-top: 120px;
+    text-align: center;
+    letter-spacing: 8px;
+    word-spacing: 16px;
+    text-transform: uppercase;
+}
+
+/*--------- História ---------*/
+.story h2{
+    padding-top: 170px;
+}
+.story-flex div{
+    width: 70%;
+}
+
+.story div p {
+    width: 100%;
+    margin: 0px auto 0 auto;
+    font-size: 80%;
+    font-weight: 200;
+    color: #163e3a;
+    text-align: justify; 
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+
+.story img{
+    height: 380px;
+    width: auto;
+}
+
+.story-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 30px auto 0 auto;
+}
+
+
+/*__o grande dia_*/
+
+.mapBox{
+    background-color: rgba(235, 181, 181, 0.1);
+    padding: 20px;
+}
+.mapBox p{
+    font-size: 60%;
+    font-weight: 200;
+    color: #163e3a;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.great-day-flex {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.great-day-info {
+    width: 550px;
+}
+
+.data-local {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.local-img{
+    height: 42px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.relogio-img{
+    height: 30px;
+    width: auto;
+}
+
+.great-day-info p{
+    font-size: 80%;
+    font-weight: 200;
+    color: #163e3a;
+    text-align: justify; 
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 1.6;
+}
+.data-local p{
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+iframe {
+    border: 0;
+    width: 500px; 
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+/* _______ Dress Code ______-*/
+.back-dress {
+    padding-top: 100px;
+}
+.dress-code h2{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(./img/costela\ de\ adão.png);
+    background-size: contain;
+    background-position: center;
+    padding: 66px 0;
+}
+.dress-code p{
+    font-size: 80%;
+    font-weight: 200;
+    color: #163e3a;
+    text-align: center; 
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 1.6;
+}
+
+.cloths {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 50px auto 0 auto;
+}
+.woman,
+.man{
+    width: 50%;
+}
+
+.woman p,
+.man p{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.woman h6,
+.man h6{
+    font-size: 100%;
+    font-weight: 400;
+    color: #163e3a;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 1px;
+    height: 160px;
+    background-color: #163e3a;
+    margin-top: 50px;
+}
+
+.inspire{
+    background-color: #163e3a;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 36px;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 80%;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all, 0.5s;
+    padding: 2px 0;
+    cursor: pointer;
+}
+
+.inspire:hover,
+.inspire:active{
+    background-color:  rgb(9, 49, 43);
+}
+
+/*------------------- gift list --------------*/
+
+
+.gift-list{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+
+.gift-left,
+.gift-right {
+    width: 40%;
+}
+
+.line2 {
+    width: 1px;
+    height: 350px;
+    background-color: #163e3a;
+    margin-top: 0px;
+}
+
+.gift-left p,
+.gift-right p{
+    font-size: 80%;
+    font-weight: 200;
+    color: #163e3a;
+    text-align: justify; 
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 1.6;
+    width: 100%;
+}
+.stores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.camicado-img{
+    width: auto;
+    height: 40px;
+    cursor: pointer;
+}
+
+.extra-img {
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+}
+
+.conta{
+    width: 80%;
+    margin: 50px 10%;
+}
+.conta p {
+    text-align: center;
+    font-size: 65%;
+}
+/*_______________________________________*/
+
+/*_________________imagens____________*/
+
+.imageI,
+.imageII,
+.imageIII {
+    height: 100vh;
+    min-height: 655px;
+    background-size: cover;
+    background-position: center;    
+    background-attachment: fixed; 
+}
+
+.imageI{
+    background-image: url("./img/outra.png");
+}
+
+.imageII {
+    background-image: url("./img/2-min.png");
+}
+
+.imageIII {
+    background-image: url("./img/3-min.png");
+}
+
+/*___________________Confirm section______________*/
+
+.confirm {
+    height: fit-content;
+    color:#163e3a;
+    letter-spacing: 2px;
+}
+
+.confirm h2 {
+    padding-top: 120px;
+}
+.confbox {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.eucalipto {
+    width: 25%;
+}
+
+.eucalipto1{
+    height: 200px;
+    width: auto;
+    margin-right: -112px;
+    transform: rotate(10deg);
+}
+.eucalipto2{
+    height: 250px;
+    width: auto;
+    transform: rotate(50deg);
+    padding-bottom: 18px;
+}
+
+.inside {
+    width: 50%;
+    margin: 60px 25% 0 0;
+}
+
+.inside p {
+    font-size: 70%;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color:#163e3a;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.inside li {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.search {
+    margin: 0 0 25px 0;
+    border: 1px solid#163e3a;
+    border-radius: 20px;
+    width: 100%;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    width: 90%;
+    margin: 0;
+    color:#163e3ac7;
+    border: none;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 70%;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.lupa{
+    height: 30px;
+    width: auto;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: all, 0.2s;
+}
+.lupa:hover{
+    opacity: 0.5;
+}
+
+.btnCon {
+    width: 100%;
+    color:#fff;
+    background-color: #163e3a;
+    border: 1px solid#163e3a;
+    padding: 8px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all, 0.5s;
+}
+
+.btnCon:hover {
+    background-color: #102c29;
+}
+
+ul li {
+    color:#163e3a;
+    cursor: pointer;
+    transition: all, 0.5s;
+}
+
+ul li:hover {
+    color: rgb(11, 58, 50, 0.3);
+}
+
+h4 {
+    font-size: 100%;
+    margin: 10px 0;
+    font-weight: 700;
+    color: #163e3a;
+}
+
+.select {
+    font-size: 90%;
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.last-eucalipto {
+    display: none;
+}
+/*__________________________________________*/
+
+/*________________message_________________*/
+
+.recado {
+    width: 100%;
+    height: 100vh;
+    min-height: 655px;
+    padding: 50px;
+    background-color: rgba(226, 177, 177, 0.1);
+}
+
+.rcdBox {
+    display: flex;
+    width: 85%;
+    margin: 50px auto 0 auto;
+    justify-content: space-between;
+}
+.msg  {
+    width: 50%;
+    margin: 0;
+}
+
+.msg p {
+    width: 100%;
+    font-size: 70%;
+    font-weight: 400;
+    margin: 5px 0 8px 10px;
+    color:#163e3a;
+    letter-spacing: 2px;
+}
+.msg textarea{
+    width: 100%;
+    margin: 0;
+    color:#163e3ac7;
+    border: 1px solid #163e3a83;
+    border-radius: 25px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 70%;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 5px;
+    background-color: transparent;
+}
+
+#msgAuthor {
+    background-color: transparent;
+    margin: 0;
+    color:#163e3ac7;
+    border: 1px solid #163e3a83;
+    border-radius: 25px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 70%;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 100%;
+    height: 30px;
+}
+
+.msgMural {
+    margin: 0;
+    width: 40%;
+    height: fit-content;
+    min-height: 160px;
+    padding: 0;
+    background-color: transparent;
+}
+
+#muralText {
+    text-align: justify;
+    font-size: 90%;
+    font-weight: 200;
+    font-style: italic;
+    color: #163e3a;
+    margin-left: 60px;
+    letter-spacing: 1px;
+}
+
+.msgMural p:last-child{
+    font-size: 90%;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 30px;
+    text-align: right;
+    color: #163e3a;
+    letter-spacing: 1px;
+}
+
+.aspas {
+    height: 40px;
+    width: auto;
+    margin: 0 0 20px 20px;
+}
+
+
