@@ -19,8 +19,11 @@
 @media only screen and (max-width: 480px) {
 
     header {
-        background-image: url(image/back_mobile.jpg);
+        background-image: linear-gradient(rgb(0, 0, 15, 0.7), rgba(0, 0, 15, 0.6)), url(image/back_mobile.jpg);
         background-position: left;
+    }
+    html{
+        font-size: 18px;
     }
 
     .pages{
@@ -48,26 +51,36 @@
         z-index: 998;
         transition: 0.5s;
         overflow: hidden;
+        background-color: rgb(0, 37, 56, 0.95);
     }
 
-    .navbar img{display: none;}
+    .navbar img{
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        width: 50px;
+        height: auto;
+        margin-top: 0px;
+        border: none;
+        transition: all 0.5s;
+    }
 
     .list{display:block;}
     
     .next{display: block;}
 
     section{
-        background-color: rgb(237, 241, 241, 0.5);
         padding-bottom: 150px;
     }
 
     section p { width: 80%;}
 
     .home h1{
+        letter-spacing: 3px;
         font-size: 220%;
     }
     .home h2{
-        font-size: 118%;
+        font-size: 150%;
     }
 }
 

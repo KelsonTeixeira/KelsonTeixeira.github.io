@@ -10,11 +10,9 @@ console.log(navbar);
 function list(){
     if (list_variable === 0){
         navbar.style.height = '320px';
-        listIcon.style.color = '#ecf0f1';
         list_variable = 1;
     }else{
         navbar.style.height = '0';
-        listIcon.style.color = '#12191f';
         list_variable = 0;
     }
 }
@@ -37,3 +35,30 @@ function pass_next(){
         }
     }
 }
+
+
+
+const perfil = {
+    element : document.querySelector('.navbar img'),
+    toggle: false,
+    clicked: function(){
+        if(!perfil.toggle){
+            perfil.toggle = !perfil.toggle;
+            perfil.element.style.width = '80%';
+            perfil.element.style.left = '10%';
+            perfil.element.style.top = '10%';
+        }else{
+            perfil.toggle = !perfil.toggle;
+            perfil.element.style.width = '50px';
+            perfil.element.style.left = '10px';
+            perfil.element.style.top = '10px';  
+        }
+    },
+    init : function(){
+        if(window.innerWidth <= 480){
+            perfil.element.addEventListener('click', this.clicked);
+        }
+    }
+}
+
+perfil.init();
