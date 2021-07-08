@@ -71,6 +71,7 @@ header img{
     width: 100%;
     height: 350px;
     object-fit: cover;
+    object-position: top;
     margin-bottom: 16px;
     cursor: pointer;
     transition: all 0.3s;
@@ -82,7 +83,7 @@ header img{
 .project-list .box p {
     color: #353b48;
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     letter-spacing: 1px;
     text-align: justify;
 }
