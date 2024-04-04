@@ -54,7 +54,7 @@
         background-color: rgb(0, 37, 56, 0.95);
     }
 
-    .navbar img{
+    .navbar .perfil{
         position: fixed;
         left: 10px;
         top: 10px;
@@ -63,6 +63,14 @@
         margin-top: 0px;
         border: none;
         transition: all 0.5s;
+    }
+
+    .navbar .flag {
+        bottom: unset;
+        top: 50px;
+        right: 17px;
+        width: 23px;
+        height: auto;
     }
 
     .list{display:block;}
